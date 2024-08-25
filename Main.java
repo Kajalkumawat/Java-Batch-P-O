@@ -130,7 +130,7 @@
 // }
 // }
 
-// public class Main1 {
+// pubgilic class Main1 {
 // public static void main(String[] args) {
 // C k = new C();
 // k.show2();
