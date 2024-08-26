@@ -1,0 +1,83 @@
+singleton class : 
+class A {
+    private A() {
+        System.out.println("Hello WOrld");
+    }
+
+    static void show() {
+        new A();
+    }
+}
+
+public class Main1 {
+    public static void main(String[] args) {
+        A.show();
+    }
+}
+-----------------------------------------------------------------
+aggregation : 
+->multiple files access inside a single class 
+
+method : 
+Ac.java 
+public class Ac {
+    void hello() {
+        System.out.println("ac class");
+    }
+}
+
+Main1.java
+public class Main1 {
+    public static void main(String[] args) {
+        Ac k = new Ac();
+        k.hello();
+    }
+}
+-------------------------------------------------------------
+inheritance : 
+class B {
+    void show() {
+        System.out.println("Hello ");
+    }
+}
+
+class Ac extends B {
+    void hello() {
+        System.out.println("hiii");
+    }
+}
+
+public class Main1 {
+    public static void main(String[] args) {
+        Ac k = new Ac();
+        k.hello();
+        k.show();
+    }
+}
+---------------------------------------------------------------
+polymorphism :
+compile time : 
+->method overloading , constructor overloading , constructor chaining 
+
+run time : 
+->overriding and overhiding 
+---------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

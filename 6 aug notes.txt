@@ -1,0 +1,123 @@
+Final Keyword In Java : 
+The final keyword in java is used to restrict the user. The java final keyword can be used in many context. Final can be:
+
+variable
+method
+class
+
+variable :
+public class Main1{
+    public static void main(String[] args){
+        //final variable :value does not reassign  
+       final int a=78;
+        a=7;
+        System.out.println(a);
+    }
+}
+
+method : 
+method does not override 
+class A {
+    final void show() {
+        System.out.println("show1 method");
+    }
+}
+
+class B extends A {
+    final void show() {
+        System.out.println("show2 method");
+    }
+}
+
+public class Main1 {
+    public static void main(String[] args) {
+        B p = new B();
+       p.show();
+    }
+}
+--------------------------------------------------------------
+class final : 
+->inheritance does not possible 
+
+final class A {
+
+}
+
+final class B extends A {
+
+}
+
+public class Main1 {
+    public static void main(String[] args) {
+        B p = new B();
+    }
+}
+--------------------------------------------------------------
+What is blank or uninitialized final variable? 
+final instance variable does not initialize inside the methods 
+when want to initialize final instance variable then used constructor 
+final instance variable does not initialize into the static block 
+
+class A {
+    final int a;
+    A() {
+        a = 78;
+        System.out.println(a);
+    }
+}
+
+public class Main1 {
+    public static void main(String[] args) {
+        new A();
+    }
+}
+---------------------------------------------------------------
+class A {
+    final int a;
+    static {
+        a = 56;
+        System.out.println(a);
+    }
+}
+
+public class Main1 {
+    public static void main(String[] args) {
+        new A();
+    }
+}
+---------------------------------------------------------------
+interface A {
+    int a = 89;
+}
+
+class B implements A {
+    void show() {
+        System.out.println(a);
+    }
+}
+
+public class Main1 {
+    public static void main(String[] args) {
+        B p = new B();
+        p.show();
+    }
+}
+
+interface A {
+    //inside interface instance variable by default final 
+    int a = 89;
+}
+
+class B implements A {
+    void show() {
+        a=7;
+        System.out.println(a);
+    }
+}
+
+public class Main1 {
+    public static void main(String[] args) {
+        B p = new B();
+        p.show();
+    }
+}

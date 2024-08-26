@@ -1,0 +1,84 @@
+constructor :
+------------------------------------------------------
+parameterised constructor : argument constructor 
+
+class A {
+    int a;
+
+    A(int a) {
+        this.a = a;
+        System.out.println(a);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        new A(56);
+        A p=new A(45);
+    }
+}
+-------------------------------------------------------------
+destructor : 
+->class name and destructor name same 
+->it is used to destroy the object 
+
+constructor :
+class A		A() 
+
+destructor :
+class A 	A()			~A() 
+
+~ :tilde symbol 
+
+destructor does not support in java .
+
+why : due to garabage collector
+
+when make constructor and destructor then always run gc then i creates loop inside the memory so faced the problem of memory leakage . 
+--------------------------------------------------------
+inheritance :
+->parent child relationship
+->inheritance means access single class property to another another 
+
+->is a relationship called inheritance
+
+types :
+->single level 
+->multilevel 
+->multiple 
+->heirarichal
+->hybrid  
+
+->single level :
+	it have single parent and single child 
+
+class Parent {
+    void show() {
+        System.out.println("parent classs method");
+    }
+}
+
+// child class
+class Child extends Parent {
+    void show1() {
+        System.out.println("child class method");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Child k = new Child();
+
+        k.show1();
+        k.show();
+    }
+}
+-------------------------------------------------------
+
+
+
+
+
+
+
+

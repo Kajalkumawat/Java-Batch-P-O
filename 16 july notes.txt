@@ -1,0 +1,148 @@
+encapsulation :
+->it is used bind the data like a capsule 
+
+Encapsulation in Java is a process of wrapping code and data together into a single unit
+
+
+
+main features :
+->getter setter method :read only and write only 
+
+types :
+a)constructor 
+b)destructor 
+-------------------------------------------------------------------
+getter setter method :access private instance variable 
+
+variables :
+a)local variable 
+b)instance variable 
+c)static variable 
+
+
+a)local variable 
+->inside the block :method 
+->mandatory to assign the value of the variable 
+
+public class Main{
+    public static void main(String[] args) {
+       int a; //local variable  
+       System.out.println(a);
+    }
+}
+error :
+
+b)instance variable 
+->made between class and method 
+->outside of the method 
+->it follow value initialization 
+public class Main {
+    int a;// instance variable
+
+    void show() {
+        System.out.println("a" + a + " b" + b + " c" + c);
+    }
+
+    int b; // instance variable
+
+    public static void main(String[] args) {
+        Main k=new Main();
+        k.show();
+    }
+
+    int c;// variable
+}
+----------------------------------------------------------------------
+instance variable :pass value with three different ways : 
+
+a)first way to pass instance variable value .
+
+class A{
+    int a=1,b=1;
+    void show(){
+        int c=a+b;
+        System.out.println(c);
+    }
+    void sub(){
+        System.out.println(a-b);
+    }
+}
+public class Main{
+    public static void main(String[] args) {
+        A p=new A();
+        p.show();
+        p.sub();
+    }
+}
+-----------------------------------------------------------------
+second way to pass instance variable value .
+
+class A {
+    int a, b;// a=0,b=0
+
+    void show(int k, int p) {// k=12 , p=78
+        a = k;// a=12
+        b = p;// b=78
+    }
+
+    void display() {
+        System.out.println(a + " " + b);// a=12,b=78
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        A k = new A();
+        k.show(12, 78);
+        k.display();
+    }
+}
+------------------------------------------------------------------
+third way to pass instance variable value:
+
+class A{
+    int a;//67 
+    void show(int a){//67
+        this.a=a;//this :used to pass the value of instance variable through local variable 
+        System.out.println(a);
+    }
+    void display(){
+        System.out.println(a);//67
+    }
+}
+public class Main{
+    public static void main(String[] args) {
+        A p=new A();
+        p.show(67);
+        p.display();
+    }
+}
+---------------------------------------------------------------
+getter setter method : used to access private instance variable 
+
+class A{
+    private int a;
+    private String name;
+    //setter method 
+    void setA(int a,String name){
+        this.a=a;
+        this.name=name;
+    }
+    //getter method 
+    int getA(){
+        return a;
+    }
+    String getA1(){
+        return name;
+    }
+}
+public class Main{
+    public static void main(String[] args) {
+       A k=new A();
+       k.setA(23, "regex");
+       System.out.println(k.getA());
+       System.out.println(k.getA1());
+    }
+}
+
+

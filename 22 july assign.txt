@@ -1,0 +1,176 @@
+heirarichal inheritance :
+--------------------------------------------------
+class A
+	method1 :
+
+class B
+	method2 :
+
+class C
+	method3 :
+
+
+class D
+	method4 :
+
+make only D class 
+
+class Main 
+main method :
+--------------------------------------------------
+class A
+	method1 :
+
+class B
+	method2 :
+
+class C
+	method3 :
+
+
+class D
+	method4 :
+
+
+class Main 
+main method :
+--------------------------------------------------
+getter setter method 
+
+class A
+	method1 :
+
+class B
+	method2 :
+
+class C
+	method3 :
+
+
+class D
+	method4 :
+
+
+class Main 
+main method :
+--------------------------------------------------
+instance variable  :constant 
+class A
+	method1 :
+
+class B
+	method2 :
+
+class C
+	method3 :
+
+
+class D
+	method4 :
+
+
+class Main 
+main method :
+--------------------------------------------------
+instance variable  :different name variable  
+class A
+	method1 :
+
+class B
+	method2 :
+
+class C
+	method3 :
+
+
+class D
+	method4 :
+
+
+class Main 
+main method :
+--------------------------------------------------
+instance variable  :same variable name  
+class A
+	method1 :
+
+class B
+	method2 :
+
+class C
+	method3 :
+
+
+class D
+	method4 :
+
+
+class Main 
+main method :
+--------------------------------------------------
+class A
+default constructor 
+
+class B
+default constructor 
+
+class C
+default constructor 
+
+
+class D
+default constructor 
+
+
+class Main 
+default constructor 
+
+main method :access 
+--------------------------------------------------
+LinkedIn code : 
+
+class Information
+instance variable : 
+cname
+
+three college name : ru, rtu , uot 
+	ru : caddress
+	cnumber
+	crating 
+	ccourses 	
+		bca 
+		bcom
+		bba 
+		mcom 
+			fees :semesmter wise all courses fees always be different 
+
+class Student ex College 
+		bca 
+		 sname
+                 saddress
+                 scontact 
+                 ssemester 
+
+		bcom
+		 sname
+                 saddress
+                 scontact 
+                 ssemester 
+
+
+		bba 
+		 sname
+                 saddress
+                 scontact 
+                 ssemester 
+
+
+		mcom 
+		 sname
+                 saddress
+                 scontact 
+                 ssemester 
+
+class Main 
+main method 
+--------------------------------------------------

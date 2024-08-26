@@ -1,0 +1,47 @@
+aggregation : 
+-------------------------------------------------------------
+abstraction : 
+abstract class A{
+    abstract void show();
+}
+class Ac extends A{
+    void show(){
+        System.out.println("abstraction in aggregation");
+    }
+}
+
+public class Main1{
+    public static void main(String[] args) {
+        Ac k=new Ac();
+        k.show();
+    }
+}
+-----------------------------------------------------------
+aggregation interface : 
+
+interface A {
+    void show();
+}
+
+class Ac implements A {
+    public void show() {
+        System.out.println("interface ");
+    }
+}
+
+public class Main1{
+    public static void main(String[] args) {
+        Ac k=new Ac();
+        k.show();
+    }
+}
+-------------------------------------------------------
+
+
+
+
+
+
+
+
+

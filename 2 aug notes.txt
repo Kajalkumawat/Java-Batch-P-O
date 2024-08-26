@@ -1,0 +1,38 @@
+static : 
+--------------------------------------------------
+->keyword 
+->used to call methods without object creation
+->static keyword used for save memory 
+
+The static keyword in Java is used for memory management mainly.
+
+The static can be:
+
+Variable (also known as a class variable)
+Method (also known as a class method)
+Block
+Nested class
+-------------------------------------------------------------
+variable :
+int a ; normal variable 
+
+static variable 
+static int a; : class variable static variable 
+-----------------------------------------------------
+class A {
+    int c = 1;
+
+    A() {
+        System.out.print(c + " ");
+        c++;
+    }
+}
+
+public class Main1 {
+    public static void main(String[] args) {
+        new A();
+        new A();
+        new A();
+    }
+}
+------------------------------------------------------------

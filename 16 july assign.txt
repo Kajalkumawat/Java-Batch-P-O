@@ -1,0 +1,82 @@
+first way :
+
+class A
+	instance variable :
+	method :two number addition 
+
+class Main 
+main method 
+-----------------------------------------------------
+second way : 
+
+class A
+	instance variable a,b,c,d,e,f
+	method :two variable addition
+	method :two variable sub
+	method :two variable div
+
+class Main 
+	instance variable :
+	method :two number addition 
+
+main method :
+--------------------------------------------------------------
+third way : 
+
+class A
+	instance variable a,b,c,d,e,f
+	method :two variable addition
+	method :two variable sub
+	method :two variable div
+
+class Main 
+	instance variable :
+	method :two number addition 
+
+main method :
+--------------------------------------------------------------
+getter setter method :
+all primitve data type with String 
+
+------------------------------------------------------------------
+user input :
+
+name
+fname
+nmame
+class
+address
+contact 
+roll_no 
+gender 
+marks 
+
+getter setter 
+------------------------------------------------------------------
+company 
+
+empname
+eid
+efname
+econtact
+eaddress 
+ealternate_number 
+salary 
+edepartment 
+bankaccountnumber
+post 
+
+getter setter 
+----------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+

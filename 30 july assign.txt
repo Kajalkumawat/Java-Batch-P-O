@@ -1,0 +1,76 @@
+interface A 
+	method : no return and no argument 
+	method : no return and  argument 
+	method :  return and no argument 
+	method :  return and  argument 
+
+class B -->access interface 
+
+class Main :make object 
+---------------------------------------------------------------------
+interface A 
+	method : no return and no argument 
+
+interface B
+	method : no return and  argument 
+
+interface C
+	method :  return and no argument 
+
+interface D 
+	method :  return and  argument 
+
+class E -->access interface 
+
+class Main :make object 
+---------------------------------------------------------------------
+through extends 
+
+interface A 
+	method : no return and no argument 
+
+interface B
+	method : no return and  argument 
+
+interface C
+	method :  return and no argument 
+
+interface D 
+	method :  return and  argument 
+
+class E -->access interface 
+
+class Main :make object 
+---------------------------------------------------------------------
+interface A 
+	method : no return and no argument 
+		interface B
+			method : no return and  argument 
+		interface C
+			method :  return and no argument 
+
+		interface D 
+			method :  return and  argument 
+
+
+class E -->access interface 
+
+class Main :make object 
+
+---------------------------------------------------------------------
+interface A 
+	method : no return and no argument 
+		interface B
+			method : no return and  argument 
+			interface C
+			  method :  return and no argument 
+					interface D 
+			      		method :  return and  argument 
+		
+
+
+class E -->access interface 
+
+class Main :make object 
+
+---------------------------------------------------------------------

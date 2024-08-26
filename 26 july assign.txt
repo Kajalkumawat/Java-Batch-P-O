@@ -1,0 +1,259 @@
+overhiding :
+single level 
+
+multilevel 
+
+
+heriraichal 
+---------------------------------------------------
+class company 
+
+instance variable 
+empname
+eid
+efname
+econtact
+eaddress 
+ealternate_number 
+salary 
+edepartment 
+bankaccountnumber
+post 
+
+class Employe 
+instance variable 
+empname
+eid
+efname
+econtact
+eaddress 
+ealternate_number 
+salary 
+edepartment 
+bankaccountnumber
+post 
+
+super third use se krogey 
+--------------------------------------------
+super third use :
+
+class Colllege 
+name
+fname
+nmame
+class
+address
+contact 
+roll_no 
+gender 
+marks 
+
+class Studnet 
+name
+fname
+nmame
+class
+address
+contact 
+roll_no 
+gender 
+marks 
+--------------------------------------------
+class College :abstract 
+	abstract methods : 
+	course()
+	department()
+	details()
+
+class People ex College 
+
+class Main access
+
+--------------------------------------------
+class Mahindra :abstract method 
+	tyre 
+	break1
+	mirror
+	horn 
+	gate
+
+class Paranchi ex Mahindra 
+
+
+class Main :access 
+--------------------------------------------
+class Company 
+	abstract methods : 
+	workprofiler()
+	department()
+	details()
+
+class Employe ex Company 
+
+
+class Mangager ex company 
+
+
+class Main class :access  
+--------------------------------------------
+class Mall 
+	shop
+	bar
+	cafe
+	restaurant
+	games 
+
+class Person ex Mall
+
+class Child ex Person
+
+class SeniorCitizen ex Child 
+
+class Main :main method access	
+
+--------------------------------------------
+------------------------------------------------------
+class College :abstract 
+	abstract methods : 
+	course()
+	department() non abstract 
+	details() non abstract 
+
+
+class People ex College 
+
+class Main access
+
+--------------------------------------------
+class Mahindra :abstract method 
+	tyre 
+	break1
+	mirror nonabstract 
+	horn non abstract 
+	gate non abstract 
+
+class Paranchi ex Mahindra 
+
+
+class Main :access 
+--------------------------------------------
+class Company 
+	abstract methods : 
+	workprofiler() non abstract 
+	department()
+	details()
+
+class Employe ex Company 
+
+
+class Mangager ex company 
+
+
+class Main class :access  
+--------------------------------------------
+class Mall 
+	shop
+	bar
+	cafe non abstract 
+	restaurant non abstract 
+	games 
+
+class Person ex Mall
+
+class Child ex Person
+
+class SeniorCitizen ex Child 
+
+class Main :main method access	
+--------------------------------------------
+class Mall 
+	shop
+	bar
+	cafe non abstract 
+	restaurant non abstract 
+	games 
+
+class Person ex Mall
+adharcard() 
+	detail :name 
+
+class Child ex Person
+pan chard() :details 
+
+class SeniorCitizen ex Child 
+rashancard()
+
+class Main :main method access	
+
+--------------------------------------------
+class A :abstract 
+	method :no return and no argument 
+
+class B :ex A 
+
+class Main main :access 
+--------------------------------------------
+class A :abstract 
+	method :no return and  argument 
+
+class B :ex A 
+
+class Main main :access 
+
+--------------------------------------------
+class A :abstract 
+	method : return and no argument 
+
+class B :ex A 
+
+class Main main :access 
+--------------------------------------------
+class A :abstract 
+	method : return and  argument 
+
+class B :ex A 
+
+class Main main :access 
+--------------------------------------------
+class A :abstract 
+	method :covariant return type 
+
+class B :ex A 
+
+class Main main :access 
+
+--------------------------------------------
+class A :abstract 
+		method overloading 
+
+class B :ex A 
+
+class Main main :access 
+
+--------------------------------------------
+class A :abstract 
+		method overrding :non abstract overrding possible  
+
+class B :ex A 
+
+class Main main :access 
+
+--------------------------------------------
+class A :abstract 
+		method overrding :non abstract overrding possible  
+
+class B :ex A 
+
+class Main main :access 
+
+problem solve 
+--------------------------------------------
+
+
+
+
+
+
+
+
+

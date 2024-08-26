@@ -1,0 +1,133 @@
+file A 
+no return and no argument 
+
+file B
+no return and  argument 
+
+file C
+ return and no argument 
+
+file D
+ return and  argument 
+
+file E 
+covariant return type 
+
+file Main :access 
+---------------------------------------------------------
+file A 
+default constructor
+
+file B
+parameterised constructor 
+
+file Main :access 
+---------------------------------------------------------
+encapsulation : 
+file A 
+instance variable constant values 
+
+file B
+instance variable same variable values 
+
+file C
+instance variable same different  values 
+
+file D
+instance variable constructor  
+
+
+file Main :access 
+---------------------------------------------------------
+file A 
+getter and setter
+
+file Main :access 
+---------------------------------------------------------
+inheritance : 
+file A 
+single level inheritance 
+
+
+file B
+multilevel inheritance 
+
+file C 
+heirarichal inheritance 
+
+file Main 
+access A , B , C 
+---------------------------------------------------------
+polymorphism : 
+file A 
+method overloading
+
+file B
+constructor overloading 
+
+file C
+constructor chaining 
+
+file D
+overriding
+
+file E 
+overhiding
+
+file Main :access 
+---------------------------------------------------------
+class company 
+
+instance variable 
+empname
+eid
+efname
+econtact
+eaddress 
+ealternate_number 
+salary 
+edepartment 
+bankaccountnumber
+post 
+
+class Employe 
+instance variable 
+empname
+eid
+efname
+econtact
+eaddress 
+ealternate_number 
+salary 
+edepartment 
+bankaccountnumber
+post 
+
+super third use se krogey 
+
+----------------------------------------
+class Colllege 
+name
+fname
+nmame
+class
+address
+contact 
+roll_no 
+gender 
+marks 
+
+class Studnet 
+name
+fname
+nmame
+class
+address
+contact 
+roll_no 
+gender 
+marks 
+------------------------------------------------------------
+
+
+

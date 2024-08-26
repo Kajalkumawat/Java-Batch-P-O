@@ -1,0 +1,122 @@
+interface 
+	->abstract method
+	->non abstract method 
+-----------------------------------------------------------
+abstract method : declare method and not define inside class
+non -abstract :always define does not declare 
+
+-----------------------------------------------------------
+interface A {
+    // non abstract method
+    default void show() {
+        System.out.println("Hello World");
+    }
+}
+
+class B implements A {
+
+}
+
+public class Main1 {
+    public static void main(String[] args) {
+        B p = new B();
+        p.show();
+    }
+}
+-----------------------------------------------------------
+interface : 
+child k through call krna 
+
+interface A {
+    // interface is not instantiated : does not create
+    void show();
+}
+
+class B implements A {
+    public void show() {
+        System.out.println("Hello WOrld");
+    }
+}
+
+public class Main1 {
+    public static void main(String[] args) {
+        A p = new B();
+        p.show();
+    }
+}
+
+----------------------------------------------------------------------
+difference between object and refrence variable : 
+
+object =>
+class A 
+
+A k=new A() 
+k :object and refrence variable both 
+constructor called 
+
+refrence variable =>
+class A 
+
+A k=null 
+
+k: refrence variable it is not object 
+----------------------------------------------------------------------
+String name ="regex" 
+String class 
+name : refrence variable and it is not object because it passed value 
+
+
+int a 
+Integer a=new Integer(78) :a object 
+Integer a=89; a :refrence variable 
+----------------------------------------------------------------------
+data members : instance variable 
+public, static and final
+
+final :value will not reassign 
+
+interface A {
+    int a = 89;
+
+    void show();
+}
+
+class B implements A {
+    public void show() {
+        System.out.println(a);
+    }
+}
+
+public class Main1 {
+    public static void main(String[] args) {
+        A p = new B();
+        p.show();
+    }
+}
+-------------------------
+interface A {
+    int a = 89;
+
+    void show();
+}
+
+class B implements A {
+    public void show() {
+        a=78;
+        System.out.println(a);
+    }
+}
+
+public class Main1 {
+    public static void main(String[] args) {
+        A p = new B();
+        p.show();
+    }
+}
+error due to instance variable will be final and static 
+
+
+
+
+

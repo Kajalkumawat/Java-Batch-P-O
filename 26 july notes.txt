@@ -1,0 +1,170 @@
+super keyword third used :
+
+class A {
+    String name = "regex";
+}
+
+class B extends A {
+    String name = "hello";
+
+    void show() {
+        System.out.println(name);
+        System.out.println(super.name);
+    }
+}
+
+public class Main1 {
+    public static void main(String[] args) {
+        B p = new B();
+        p.show();
+    }
+}
+-------------------------------------------------------
+method overhiding :
+class name different and method name same but method must be static 
+
+class A {
+    static void show() {
+        System.out.println("A class");
+    }
+}
+
+class B extends A {
+    static void show() {
+        System.out.println("B class");
+    }
+}
+
+public class Main1 {
+    public static void main(String[] args) {
+        B p = new B();
+        p.show();
+    }
+}
+-----------------------------------------------------------------------
+abstraction :
+->it is used for data hiding 
+->collection of abstract method and abstract class 
+->always used abstract keyword . 
+
+abstract class :
+
+class A : normal class
+abstract class A :abstract class 
+
+void show() :normal method 
+abstract void show() :abstract method 
+
+abstract method :always declare 
+-----------------------------------------------------------------------
+//create abstract class 
+abstract class Mahindra {
+    // abstract method
+    abstract void tyre();
+}
+
+class Kajal extends Mahindra {
+    void tyre() {
+        System.out.println("tyre ");
+    }
+}
+
+public class Main1 {
+    public static void main(String[] args) {
+        Kajal k = new Kajal();
+        k.tyre();
+    }
+}
+-----------------------------------------------------------------------
+can we make multiple abstract method : yes
+
+//create abstract class 
+abstract class Mahindra {
+    // abstract method
+    abstract void tyre();
+
+    abstract void break1();
+}
+
+class Kajal extends Mahindra {
+    void tyre() {
+        System.out.println("tyre ");
+    }
+
+    void break1() {
+        System.out.println("break ");
+    }
+}
+
+public class Main1 {
+    public static void main(String[] args) {
+        Kajal k = new Kajal();
+        k.tyre();
+        k.break1();
+    }
+}
+-----------------------------------------------------------------------
+abstraction :set of abstract class and abstract method and non-abstract method 
+
+non-abstract method :
+abstract void show() :abstract method :declare 
+void show() : non-abstract method and normal method :does not declare it always define 
+
+
+
+-----------------------------------------------------------------------
+can we used inside the abstract class =>abstract method and non abstract method :yes 
+class A :abstract 
+	method :abstract 
+	method :non abstract 
+
+class B ex A 
+
+class Main 
+	main method :access 
+
+abstract class A {
+    // abstract method
+    abstract void show();
+
+    // non-abstract method
+    void show1() {
+        System.out.println("non-abstract method ");
+    }
+}
+
+class B extends A {
+    void show() {
+        System.out.println("abstract method ");
+    }
+
+}
+
+public class Main1 {
+    public static void main(String[] args) {
+        B p = new B();
+        p.show();
+        p.show1();
+    }
+}
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

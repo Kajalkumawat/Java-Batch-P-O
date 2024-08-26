@@ -1,0 +1,91 @@
+1)two number addition getter setter 
+two number multiplication getter setter 
+two number division getter setter 
+two number modular getter setter 
+two number substraction getter setter 
+------------------------------------------------
+class A
+constructor :two number addition
+
+class B
+constructor :two number multiplication
+
+class C
+constructor :two number division
+
+class D
+constructor :two number modular
+
+class Main 
+constructor :two number substraction 
+
+main method access 
+------------------------------------------------
+class A
+constructor :two number addition
+method :no return and no argument 
+
+class B
+constructor :two number multiplication
+method :no return and  argument 
+
+class C
+constructor :two number division
+method : return and no argument 
+
+class D
+constructor :two number modular
+method : return and  argument 
+
+class Main 
+constructor :two number substraction 
+method :covariant return type 
+
+main method access 
+-------------------------------------------------------------------------
+make memory in copy : 
+
+import java.util.*;
+
+public class Main {
+    Main() {
+        System.out.println("Hello wolrd");
+    }
+
+    void show() {
+        System.out.println("show method");
+    }
+
+    public static void main(String[] args) {
+        new Main();
+        Main p = new Main();
+        p.show();
+        p.show();
+        p.show();
+        Main k = new Main();
+        k.show();
+        new Main();
+    }
+}
+------------------------------------------------------------
+through instance variable :
+
+class A
+constructor :two number addition
+
+class B
+constructor :two number multiplication
+
+class C
+constructor :two number division
+
+class D
+constructor :two number modular
+
+class Main 
+constructor :two number substraction 
+
+main method access 
+-----------------------------------------------------------------------
+Constructors in Java javatpoint
+

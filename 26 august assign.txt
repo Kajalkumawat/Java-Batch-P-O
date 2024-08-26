@@ -1,0 +1,11 @@
+all primitive data type used :store homogenous data 
+
+-----------------------------------------------------
+var used : 
+
+Object class : 
+
+String 
+
+all wrapper class used : 
+-----------------------------------------------------

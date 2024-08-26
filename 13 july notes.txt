@@ -1,0 +1,173 @@
+object oriented programming language:
+
+pure object oriented programming language :
+->it used only class and object 
+->it does not used any primitive data type and it used wrapper class 
+
+wrapper class :
+->when a primitive data type store as a object | class 
+
+PD 		WC
+int		Integer 
+float		Float
+char		Character
+byte		Byte
+short		Short
+Boolean		Boolean
+double		Double
+long		Long
+
+is java pure object oritend programming language :no 
+
+why ? because it used primitive data type 
+------------------------------------------------------------------------
+object is also instance of class 
+An object contains an address
+
+public class Main{
+    public static void main (String[] args) {
+       int a=1;
+       System.out.println("the value of a is "+a);
+       //printf 
+       System.out.printf("format %d",a);
+    }
+}
+------------------------------------------------------------------------
+methods :
+->predefine :main() , print(), println() ,printf() 
+->user define 
+	no return and no argument 
+	no return and argument 
+	return and no argument 
+	return and argument 
+
+---------------------------------------------------
+	no return and no argument 
+no return :void 
+no argument :methodname()
+
+public class Main{
+    //make method 
+    void show(){
+        System.out.println("Hello world");
+    }
+    public static void main (String[] args) {
+      //we want to create a object 
+      Main a=new Main();
+      a.show();
+    }
+}
+---------------------
+two number addition : 
+public class Main {
+    void add() {
+        int a = 1, b = 1;
+        System.out.println(a + b);
+    }
+
+    public static void main(String[] args) {
+        Main k = new Main();
+        k.add();
+    }
+}
+
+import java.util.*;
+
+public class Main {
+    void add() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the value of a ");
+        int a = sc.nextInt();
+        System.out.println("enter the value og b ");
+        int b = sc.nextInt();
+        System.out.println(a + b);
+    }
+    public static void main(String[] args) {
+        Main k = new Main();
+        k.add();
+    }
+}
+------------------------------
+make method another class 
+import java.util.*;
+//create a class 
+class A {
+    // want to make method
+    void show() {
+        System.out.println("Hello World");
+    }
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+        A k = new A();
+        k.show();
+    }
+}
+-----------------------------------------------------------------
+no return and argument : 
+no return :void 
+argument : () =>declare datatype and variable 
+
+public class Main{
+    void show(int a){//parameter 
+        System.out.println(a);
+    }
+    public static void main(String[] args) {
+       Main k=new Main();
+       k.show(34);//argument  
+    }
+}
+----------------------------------------------------------
+import java.util.*;
+
+public class Main {
+    void show(int a) {// parameter
+        System.out.println(a);
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int abc = sc.nextInt();
+        Main k = new Main();
+        k.show(abc);// argument
+    }
+}
+----------------------------------------------------------
+import java.util.*;
+
+class A {
+    void show() {
+        System.out.println("A class");
+    }
+}
+
+class B {
+    void show() {
+
+        System.out.println("B class");
+        A p = new A();
+        p.show();
+    }
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+        B k = new B();
+        k.show();
+    }
+}
+
+------------
+
+
+
+
+
+
+
+
+
+

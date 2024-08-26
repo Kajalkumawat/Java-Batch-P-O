@@ -1,0 +1,144 @@
+interface :
+-------------------------------------------------------
+->set of abstract methods 
+->it always declare the method it does not define the methods 
+
+->method :by default 
+	public 
+	abstract 
+
+
+Java 8, we can have default and static methods in an interface.
+ Java 9, we can have private methods in an interface.
+
+
+why we used interface ? 
+It is used to achieve abstraction.
+By interface, we can support the functionality of multiple inheritance.
+
+how to create interface :
+used interface keyword 
+
+interface interfaceName{
+
+}
+-------------------------------------------------------
+interface A {
+    // method declare
+    void show();// abstract public
+}
+
+class B implements A {
+    public void show() {
+        System.out.println("Hello World");
+    }
+}
+
+public class Main1 {
+    public static void main(String[] args) {
+        B p = new B();
+        p.show();
+    }
+}
+-------------------------------------------------------
+how to achieve multiple inheritance in java ? 
+->through interface 
+
+interface A {
+    // method declare
+    void show();// abstract public
+}
+
+interface B {
+    void show1();
+}
+
+class C implements A, B {
+    public void show() {
+        System.out.println("interface A");
+    }
+
+    public void show1() {
+        System.out.println("interface B");
+    }
+}
+
+public class Main1 {
+    public static void main(String[] args) {
+        C p = new C();
+        p.show();
+        p.show1();
+    }
+}
+----------------------------------------------------------------------
+interface A {
+    // method declare
+    void show();// abstract public
+}
+
+interface B extends A {
+    void show1();
+}
+
+class C implements B {
+    public void show() {
+        System.out.println("interface A");
+    }
+
+    public void show1() {
+        System.out.println("interface B");
+    }
+}
+
+public class Main1 {
+    public static void main(String[] args) {
+        C p = new C();
+        p.show();
+        p.show1();
+    }
+}
+----------------------------------------------------------------------
+nested interface : 
+
+interface 
+	interface 
+
+//nested interface 
+interface A {
+    interface B {
+        void show();
+    }
+}
+
+class C implements A.B {
+    public void show() {
+        System.out.println("interface B accesss");
+    }
+}
+
+public class Main1 {
+    public static void main(String[] args) {
+        C p = new C();
+        p.show();
+    }
+}
+--------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,75 @@
+inheritance : 
+----------------------------------------------------------------
+single level inheritance : 
+class A {
+    int a;
+
+    void show(int a) {
+        this.a = a;
+    }
+}
+
+class B extends A {
+    int b;
+
+    void show1(int b) {
+        this.b = b;
+        System.out.println(a + b);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        B p = new B();
+        p.show(2);
+        p.show1(12);
+    }
+}
+------------------------------------------------------------------
+multilevel inheritance :
+->it work on levels 
+
+
+class Parent {// simple class--->parent class on level 1
+    void show1() {
+        System.out.println("parent class ");
+    }
+}
+
+class Child extends Parent {// simple class--->child class--->parent :level2
+    void show2() {
+        System.out.println("child class ");
+    }
+}
+
+what is root class :
+parent class known as root class 
+
+every class have contain root class :Object class 
+
+class GrandChild extends Child {// simple class---->child levle 2
+    void show3() {
+        System.out.println("grand child");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        GrandChild gc = new GrandChild();
+        gc.show1();
+        gc.show2();
+        gc.show3();
+    }
+}
+-----------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+

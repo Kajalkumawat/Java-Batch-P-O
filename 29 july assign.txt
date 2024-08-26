@@ -1,0 +1,140 @@
+abstract class A 
+	abstract method 
+	non-abstract method 
+
+class B ex A 
+		single level inheritance 
+		object through child class constructor 
+
+class Main:
+main method 
+-------------------------------------------------------
+abstract class A 
+	abstract method 
+	non-abstract method 
+
+class B ex A 
+		multilevel inheritance 
+		object through child class constructor 
+
+class Main:
+main method 
+-------------------------------------------------------
+abstract class A 
+	abstract method 
+	non-abstract method 
+
+class B ex A 
+		heirarichal level inheritance 
+		object through child class constructor 
+
+class Main:
+main method 
+-------------------------------------------------------
+abstract class A 
+	abstract method 
+	non-abstract method 
+
+abstract class B
+	abstract method 
+	non-abstract method 
+
+abstract class C
+	abstract method 
+	non-abstract method 
+
+class H ex B
+
+class D ex C
+
+class E ex A
+
+class F ex H
+
+class G ex C
+
+Main class 
+main method : call all child class through child class constructor 
+
+--------------------------------------------------
+abstract class A
+	abstract method : no return and no argument 
+
+class Main :
+main method :anonymous inner class 
+
+--------------------------------------------------
+abstract class A
+	abstract method : no return and  argument 
+
+class Main :
+main method :anonymous inner class 
+
+--------------------------------------------------
+abstract class A
+	abstract method :  return and no argument 
+
+class Main :
+main method :anonymous inner class 
+
+--------------------------------------------------
+abstract class A
+	abstract method :  return and  argument 
+
+class Main :
+main method :anonymous inner class 
+---------------------------------------
+
+--------------------------------------------------
+abstract class A
+	abstract method : covariant return type 
+
+class Main :
+main method :anonymous inner class 
+--------------------------------------------------
+abstract class A
+	non abstract method : return and  argument 
+	abstract method : return and no argument 
+	non abstract method :no return and  argument 
+	abstract method :no return and no argument 
+	non abstract method : covariant
+
+class B ex A 
+return and argument 
+constructor :parameterised 
+
+class Main :
+main method :anonymous inner class 
+	child k through abstraction call 
+	child k constructor through abstraction call 
+
+--------------------------------------------------
+abstract class A
+	non abstract method : return and  argument 
+	abstract method : return and no argument 
+	non abstract method :no return and  argument 
+	abstract method :no return and no argument 
+	non abstract method : covariant
+
+class B 
+anonymous inner class  
+
+class Main :
+main method :
+--------------------------------------------------
+abstract class A
+	non abstract method : return and  argument 
+	abstract method : return and no argument 
+	non abstract method :no return and  argument 
+	abstract method :no return and no argument 
+	non abstract method : covariant
+
+class B ex A 
+anonymous inner class  
+
+class Main :
+main method :
+access 
+--------------------------------------------------
+
+

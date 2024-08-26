@@ -1,0 +1,345 @@
+class A
+	instance variable :public 
+	method :value pass 
+
+class B ex A 
+	instance variable :public 
+	method :value pass :A class instance variable + B class instance variable 
+
+class Main :
+main() :child k through 
+
+-------------------------------------------------------------
+class A
+	instance variable :private 
+	method :value pass 
+
+class B ex A 
+	instance variable :public 
+	method :value pass 
+
+class Main :
+main() :child k through 
+
+error 
+problem solution code 
+-------------------------------------------------------------
+class A
+	instance variable :public 
+	method :value pass 
+
+class B ex A 
+	instance variable :private 
+	method :value pass 
+
+class Main :
+main() :child k through 
+
+error 
+problem solution code 
+-------------------------------------------------------------
+class A
+	instance variable :private 
+	method :value pass 
+
+class B ex A 
+	instance variable :private 
+	method :value pass 
+
+class Main :
+main() :child k through 
+
+error 
+problem solution code 
+-------------------------------------------------------------
+class A
+	instance variable :protected 
+	method :value pass 
+
+class B ex A 
+	instance variable :public 
+	method :value pass 
+
+class Main :
+main() :child k through 
+
+error 
+problem solution code 
+-------------------------------------------------------------
+class A
+	instance variable :protected 
+	method :value pass 
+
+class B ex A 
+	instance variable :protected 
+	method :value pass 
+
+class Main :
+main() :child k through 
+
+error 
+problem solution code 
+
+-------------------------------------------------------------
+class A
+	instance variable :public 
+	method :value pass 
+
+class B ex A 
+	instance variable :protected 
+	method :value pass 
+
+class Main :
+main() :child k through 
+
+error 
+problem solution code 
+-------------------------------------------------------------
+multilevel inheritance :
+
+class A
+normal line print 
+
+class B
+normal line print 
+
+class C
+normal line print 
+
+class Main 
+	main() :child k through all parent ki property access krni hey 
+-------------------------------------------------------------
+multilevel inheritance :
+
+class A
+add() 
+
+class B
+sub()
+
+class C
+div
+
+class D 
+multi 
+
+class Main 
+mod 
+	main() :Main k through all parent ki property access krni hey 
+-------------------------------------------------------------
+multilevel inheritance :
+
+class A
+add() :no return and no argument 
+
+class B
+sub():no return and  argument 
+
+class C
+div:return and no argument 
+
+class D 
+multi : return and argument 
+
+class Main 
+covariant return type 
+
+	main() :Main k through all parent ki property access krni hey 
+-------------------------------------------------------------
+multilevel inheritance :instance variable :constant 
+
+class A
+add() :no return and no argument 
+
+class B
+sub():no return and  argument 
+
+class C
+div:return and no argument 
+
+class D 
+multi : return and argument 
+
+class Main 
+covariant return type 
+
+	main() :Main k through all parent ki property access krni hey 
+-------------------------------------------------------------
+multilevel inheritance :instance variable :different variable 
+
+
+class A
+add() :no return and no argument 
+
+class B
+sub():no return and  argument 
+
+class C
+div:return and no argument 
+
+class D 
+multi : return and argument 
+
+class Main 
+covariant return type 
+
+	main() :Main k through all parent ki property access krni hey 
+-------------------------------------------------------------
+multilevel inheritance :instance variable :same variable :getter setter
+
+
+class A
+add() :no return and no argument 
+
+class B
+sub():no return and  argument 
+
+class C
+div:return and no argument 
+
+class D 
+multi : return and argument 
+
+class Main 
+covariant return type 
+
+	main() :Main k through all parent ki property access krni hey 
+-------------------------------------------------------------
+multilevel inheritance :instance variable  
+
+
+class A
+add() :no return and no argument 
+
+class B
+sub():no return and  argument 
+
+class C
+div:return and no argument 
+
+class D 
+multi : return and argument 
+
+class Main 
+covariant return type 
+
+	main() :Main k through all parent ki property access krni hey 
+-------------------------------------------------------------
+multilevel inheritance :instance variable  
+
+
+class A
+instance variable  
+
+class B
+instance variable  
+
+class C
+instance variable  
+
+class D 
+instance variable  
+
+class Main 
+covariant return type 
+add() 
+sub()
+multi()
+
+	main() :Main k through all parent ki property access krni hey 
+
+-------------------------------------------------------------
+class A
+instance variable  :protected 
+
+class B
+instance variable  :protected 
+
+class C
+instance variable  :protected 
+class D 
+instance variable  :protected 
+
+class Main 
+covariant return type 
+add() 
+sub()
+multi()
+
+	main() :Main k through all parent ki property access krni hey 
+-------------------------------------------------------------
+class A
+instance variable  :public 
+
+class B
+instance variable  :public 
+
+class C
+instance variable  :public 
+class D 
+instance variable  :public 
+
+class Main 
+covariant return type 
+add() 
+sub()
+multi()
+
+	main() :Main k through all parent ki property access krni hey 
+-------------------------------------------------------------
+class A
+default constructor 
+
+class B
+default constructor 
+
+class C
+default constructor 
+
+class D 
+default constructor 
+
+class Main 
+default constructor 
+
+	main() :Main k through all parent ki property access krni hey 
+
+-------------------------------------------------------------
+
+class A
+default constructor :addition :user input  
+
+class B
+default constructor :substraction :user input 
+
+class C
+default constructor :multi :user input 
+
+class D 
+default constructor :div :user input 
+
+class Main 
+default constructor :modular :user input 
+
+	main() :Main k through all parent ki property access krni hey 
+--------------------------------------------------------------------------------
+class A
+
+class B ex A 
+
+class C
+
+class D ex C
+
+class E ex D
+
+class F 
+
+class G ex F 
+
+class Main 
+	main method :
+--------------------------------------------------------------------------------
+
+
+

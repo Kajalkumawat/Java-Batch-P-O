@@ -1,0 +1,84 @@
+typecasting : 
+-----------------------------------------------------------
+means used to convert one data type into another data type .
+
+two type :
+a)automatic typecasting 
+b)manually typecasting
+-----------------------------------------------------------
+
+public class Main1 {
+    public static void main(String[] args) {
+        // byte convert into the short
+        byte a = 5;//
+        short b = a;
+        System.out.print(a + " " + b);
+    }
+}
+-----------------------------------------------------------
+public class Main1 {
+    public static void main(String[] args) {
+        char a = 'a';
+        int b = a;
+        System.out.println(b);
+    }
+}
+-----------------------------------------------------------
+higher to lower :
+public class Main1 {
+    public static void main(String[] args) {
+        // double convert into float
+        double a = 7.86;
+        float b = (float) a;
+        System.out.println(a + " " + b);
+    }
+}
+-----------------------------------------------------------
+public class Main1 {
+    public static void main(String[] args) {
+        // double convert into float
+        double a = 7.66686;
+        float b = (int) a;
+        System.out.println(a + " " + b);
+    }
+}
+--------------------------------------------------------
+class A {
+    int b;
+    // another class used refrence variable
+    Ac k;
+
+    A(int b, Ac k) {
+        this.b = b;
+        this.k = k;
+    }
+
+    void show() {
+        System.out.println(b + " " + k.a);
+    }
+}
+
+public class Main1 {
+    public static void main(String[] args) {
+        Ac p = new Ac(67);
+        A k1 = new A(5, p);
+        k1.show();
+    }
+}
+-------
+
+class Ac {
+    int a;
+
+    Ac(int a) {
+        this.a = a;
+    }
+}
+
+
+
+
+
+
+
+

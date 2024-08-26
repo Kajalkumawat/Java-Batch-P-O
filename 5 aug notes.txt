@@ -1,0 +1,225 @@
+https://www.javatpoint.com/static-keyword-in-java
+
+Method (also known as a class method) 
+->no to to object creation 
+
+class A {
+    static void show() {
+        System.out.println("show method");
+    }
+}
+
+public class Main1 {
+    public static void main(String[] args) {
+        A.show();
+    }
+}
+------------------------------------------------------------
+in a class 
+	instance variable static 
+			method non static 
+				instance variable access 
+
+class A {
+    static int a = 89;
+
+    void show() {
+        System.out.println("possible" + a);
+    }
+}
+
+public class Main1 {
+
+    public static void main(String[] args) {
+        A p = new A();
+        p.show();
+    }
+}
+-----------------------------------------------------------
+in a class 
+	instance variable no static 
+			method  static 
+				instance variable access 
+
+class A {
+     int a = 89;
+
+     static void show() {
+        System.out.println("possible" + a);
+    }
+}
+
+public class Main1 {
+
+    public static void main(String[] args) {
+        A.show();
+    }
+}
+-----------------------------------------------------------
+in a class 
+	instance variable  static 
+			method  static 
+				instance variable access 
+
+class A {
+    static int a = 89;
+
+     static void show() {
+        System.out.println("possible" + a);
+    }
+}
+
+public class Main1 {
+
+    public static void main(String[] args) {
+        A.show();
+    }
+}
+-----------------------------------------------------------
+Block :
+static block : 
+class A {
+    static {
+        System.out.println("hello");
+    }
+}
+
+public class Main1 {
+
+    public static void main(String[] args) {
+        new A();
+    }
+}
+-----------------------------------------------------------
+class A {
+    A() {
+        System.out.println("constructor call");
+    }
+
+    // anonymous block
+    {
+        System.out.println("anonymous block");
+    }
+    static {
+        System.out.println("hello");
+    }
+}
+
+public class Main1 {
+
+    public static void main(String[] args) {
+        new A();
+    }
+}
+-------------------------------------------------------
+class A {
+    // non static variable
+    static int a;
+
+    static {
+        a = 89;
+        System.out.println(a);
+    }
+}
+
+public class Main1 {
+
+    public static void main(String[] args) {
+        new A();
+    }
+}
+-------------------------------------------------------
+Nested class : 
+class A {
+    class B {
+        void show() {
+            System.out.println("Hello world");
+        }
+    }
+}
+public class Main1 {
+    public static void main(String[] args) {
+        // first way
+        A p = new A();
+        A.B k = p.new B();
+        k.show();
+
+        // second way
+        A.B o = new A().new B();
+        o.show();
+    }
+}
+-------------------------------------------------------
+inner class :class k andr class
+
+nested class :class k andr class (static ) nested class 
+
+class A {
+    static class B {
+        static void show() {
+            System.out.println("Hello world");
+        }
+    }
+}
+
+public class Main1 {
+
+    public static void main(String[] args) {
+        A.B.show();
+    }
+}
+-------------------------------------------------------
+local inner class : 
+class
+	method 
+		class
+			method :access 
+class A {
+    void show() {
+        class B {
+            void display() {
+                System.out.println("Hello WOrld");
+            }
+        }
+        B p = new B();
+        p.display();
+    }
+}
+
+public class Main1 {
+
+    public static void main(String[] args) {
+        A k = new A();
+        k.show();
+    }
+}
+--------------------------------------------------------------
+factory method |production method | singleton design method | singleton method | singleton design concept | singleton class concept 
+
+singleton class : 
+->which class make object inside the class 
+
+class A {
+    private A() {
+        System.out.println("private constructor");
+    }
+
+    static void show() {
+        new A();
+    }
+}
+
+public class Main1 {
+    public static void main(String[] args) {
+        A.show();
+    }
+}
+
+
+
+
+
+
+
+
+

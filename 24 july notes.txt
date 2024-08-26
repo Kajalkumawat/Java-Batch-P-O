@@ -1,0 +1,121 @@
+run time polymorphism :
+->method overriding 
+->method overhidding 
+-------------------------------------------------------------
+=>method overriding 
+different class name but method name same 
+
+class A{
+    void show(){
+        System.out.println("A class method");
+    }
+}
+class B extends A{
+    void show(){
+        System.out.println("B class method ");
+    }
+}
+public class Main{
+    public static void main(String[] args) {
+        B p=new B();
+        p.show();
+    }
+}
+-------------------------------------------------------------
+how to solve this problem ? 
+keyword :super 
+
+class A {
+    void show() {
+        System.out.println("A class method");
+    }
+}
+
+class B extends A {
+    void show() {
+        super.show();
+        System.out.println("B class method ");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        B p = new B();
+        p.show();
+    }
+}
+---------------------------------------------------------------------
+class name different and method name same but return of method will be changed :then method override but does not solve this problem and it gives error and used only overriding functionality 
+
+class A {
+    void show() {
+        System.out.println("A class method");
+    }
+}
+
+class B extends A {
+    int show() {
+        System.out.println("B class method ");
+        return 0;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        B p = new B();
+        p.show();
+    }
+}
+--------------
+class A {
+    void show() {
+        System.out.println("A class method");
+    }
+}
+
+class B extends A {
+    void show(int a) {
+        super.show();
+        System.out.println("B class method ");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        B p = new B();
+        p.show(46);
+    }
+}
+-------------------------------------------------------------------
+second use of super : 
+super() method :used to call parent constructor 
+
+class A {
+    A(int a) {
+        System.out.println("A constructor call" + a);
+    }
+}
+
+class B extends A {
+    B() {
+        super(12);
+        System.out.println("B constructor call");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        new B();
+    }
+}
+----------------------------------------------------
+
+
+
+
+
+
+
+
+
+

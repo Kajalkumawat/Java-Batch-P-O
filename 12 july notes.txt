@@ -1,0 +1,36 @@
+oops :
+--------------------------------------------------------
+oops stands for object oriented programming system 
+oopl :object oriented programming language
+
+oops :is also known as object oriented paradigm 
+paradigm :to perform a specific task and used to design a software development. 
+
+oop is a set of classes and objects 
+
+class :
+->collection of object 
+->class is blue print of this code , template of the code
+->it does not use any memory in java.(ROM)
+eg: animal, stationary
+
+object :
+->object is also known as refrence variable
+->object is a real word entity :it have particular characterstic and behavior. 
+eg:book , pen , dog , cat 
+------------------------------------------------------------
+concepts :
+
+1)encapsulation :data binding 
+2)inheritance :parent child relationship 
+3)polymorphism :one thing many form
+4)abstraction :data hiding
+
+---------------------------------------------
+
+
+
+
+
+
+

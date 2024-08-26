@@ -1,0 +1,113 @@
+abstraction :
+-----------------------------------------
+can we make object of abstraction class and make constructor also :
+create object but does no make constructor  
+
+abstract class A{
+    abstract void show();
+}
+public class Main1{
+    public static void main(String[] args) {
+        //can we make object of abstract class 
+        A p=new A();
+    }
+}
+-----------------------------------------
+abstract class A {
+    abstract void show();
+}
+
+class B extends A {
+    void show() {
+        System.out.println("Hello world");
+    }
+}
+
+public class Main1 {
+    public static void main(String[] args) {
+        // can we make object of abstract class
+        A p = new B();
+        p.show();
+    }
+}
+---------------------------------------------------------
+abstract class A {
+    abstract void show();
+    void show2(){
+        System.out.println("A class metod non abs ");
+    }
+}
+
+class B extends A {
+    void show() {
+        System.out.println("Hello world");
+    }
+
+    void show1() {
+        System.out.println("B class method");
+    }
+}
+
+public class Main1 {
+    public static void main(String[] args) {
+        // can we make object of abstract class
+        A p = new B();
+        p.show();
+        p.show2();
+       // p.show1();
+    }
+}
+---------------------------------------------------------------
+anonymous inner class : 
+
+//abstract class :
+abstract class A {
+    abstract void show();
+}
+
+public class Main1 {
+    public static void main(String[] args) {
+        //anonymous inner class 
+        A p = new A() {
+            void show() {
+                System.out.println("Hello world");
+            }
+        };
+        p.show();
+    }
+}
+------------------------------------------------------------------
+//abstract class :
+abstract class A {
+    abstract void show();
+}
+
+class B {
+    void show1() {
+        A p = new A() {
+            void show() {
+                System.out.println("hello world ");
+            }
+        };
+        p.show();
+    }
+}
+
+public class Main1 {
+    public static void main(String[] args) {
+        B p = new B();
+        p.show1();
+    }
+}
+------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,162 @@
+compile time :method overloading , constructor overloading , constructor chaining 
+
+===============================================
+method overloading : 
+->in a class method name same then method will be overloaded 
+
+class A{
+    //method overloading 
+    void show(){
+        System.out.println("first method ");
+    }
+    void show(){
+        System.out.println("second method ");
+    }
+}
+public class Main{
+    public static void main(String[] args) {
+        
+    }
+}
+
+how to solve this problem : 
+->in a class method name same but number of parameter will be different 
+
+class A {
+    // method overloading
+    void show(int a) {
+        System.out.println("first method " + a);
+    }
+
+    void show() {
+        System.out.println("second method ");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        A p = new A();
+        p.show(3);
+        p.show();
+    }
+}
+-----------------------------------------------
+in a class method name  number of parameter also same but change data type of parameter then method does not overload 
+
+class A {
+    // method overloading
+    void show(int a) {
+        System.out.println("first method " + a);
+    }
+
+    void show(float a) {
+        System.out.println("second method "+a);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        A p = new A();
+        p.show(3);
+        p.show(6.7f);
+    }
+}
+-----------------------------------------------------------
+in a class method name same but return type different and parameter also same : method will be overloaded 
+
+class A {
+    // method overloading
+    void show(int a) {
+        System.out.println("first method " + a);
+    }
+
+    int show(int a) {
+        System.out.println("second method "+a);
+        return a;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        A p = new A();
+        p.show(3);
+    }
+}
+------------------------------------------------------
+constructor overloading : 
+ //constructor overloading :number parameter same then constructor willl be overloaded
+
+class A {
+    
+   A(){
+
+   }
+   A(){
+
+   }
+}
+
+public class Main {
+    public static void main(String[] args) {
+       
+    }
+}
+
+how to solve this problem : 
+->change number of parameter of the constructor 
+
+class A {
+    A(int a) {
+
+    }
+
+    A() {
+
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        new A();
+        new A(67);
+    }
+}
+------------------------------------------------------
+constructor chaining : 
+->connect multiple constructor through this method 
+->means one constructor connect to the another constructor 
+->when want to call all constructor through one constructor then used constructor chaining 
+
+class A {
+    A(int a) {
+        this(1,2);
+        System.out.println(a);
+    }
+
+    A(int a, int b) {
+        this();
+        System.out.println(a + " " + b);
+    }
+
+    A() {
+        this(4.5f);
+        System.out.println("simple constructor");
+    }
+
+    A(float a) {
+        System.out.println(a);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        new A(4);
+    }
+}
+
+
+
+
+
+
+

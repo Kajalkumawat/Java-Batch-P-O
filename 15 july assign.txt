@@ -1,0 +1,122 @@
+	return and no argument 
+
+all primitive data type :used as a return type 
+
+String used 
+
+covariant return type 
+-------------------------------------------------------------------
+class Main :
+add
+div
+multi
+sub
+mod 
+
+main method :access
+-------------------------------------------------------------------
+class A
+add
+div
+multi
+sub
+mod 
+
+
+class Main :
+covariant return type 
+
+main method :A class k methods ko access
+-------------------------------------------------------
+class A
+covariant return type 
+object C
+add
+
+class B
+covariant return type 
+div
+object A
+
+class C
+covariant return type 
+multi
+
+class D
+covariant return type 
+sub
+object B
+
+class E
+covariant return type 
+object D
+mod 
+
+
+class Main :
+covariant return type 
+
+main method :access all the methods
+-------------------------------------------------------------
+******************************************************************
+	return and  argument 
+
+all primitive data type :used as a return type 
+
+String used 
+
+covariant return type 
+-------------------------------------------------------------------
+class Main :
+add
+div
+multi
+sub
+mod 
+
+main method :access
+-------------------------------------------------------------------
+class A
+add
+div
+multi
+sub
+mod 
+
+
+class Main :
+covariant return type 
+
+main method :A class k methods ko access
+-------------------------------------------------------
+class A
+covariant return type 
+object C
+add
+
+class B
+covariant return type 
+div
+object A
+
+class C
+covariant return type 
+multi
+
+class D
+covariant return type 
+sub
+object B
+
+class E
+covariant return type 
+object D
+mod 
+
+
+class Main :
+covariant return type 
+
+main method :access all the methods
+----------------------------------------------------------------------
+

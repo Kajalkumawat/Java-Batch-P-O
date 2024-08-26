@@ -1,0 +1,215 @@
+methods :
+-------------------------------------------------------
+c)return and no argument 
+d)return and argument 
+
+c)return and no argument 
+return :all primitive data type used as return type or String.
+
+public class Main {
+    // method :return and no argument
+    int show() {
+        int a = 89;
+        return a;
+    }
+
+    public static void main(String[] args) {
+        // two ways :
+        // first way
+        Main k = new Main();
+        System.out.println(k.show());
+        // second way
+        int num = k.show();
+        System.out.println(num);
+    }
+} 
+-------------------------------------------------------------------
+public class Main {
+    // method :return and no argument
+    int show() {
+        String name = "hello";
+        System.out.println(name);
+        int a = 89;
+        return a;
+    }
+
+    public static void main(String[] args) {
+        Main k = new Main();
+        System.out.println(k.show());
+       
+    }
+}
+----------------------------------------------------
+public class Main {
+    String hello(){
+        String name="regex";
+        return name;
+    }
+    public static void main(String[] args) {
+       Main p=new Main();
+       System.out.println(p.hello());
+    }
+}
+----------------------------------------------------------------
+covariant return type : 
+->class name and return type name same 
+->return type of covariant return type :object (this keyword) 
+
+public class Main {
+   //return type methodname() {} 
+   //covariant 
+   Main hello(){
+    System.out.println("Hello");
+    return this;//this used to return object 
+   }
+    public static void main(String[] args) {
+       Main p=new Main();
+       p.hello();
+    }
+}
+---------------------------------------------------------------------------
+two number addition :return and no argument :
+public class Main {
+  int add(){
+    int a=1,b=2;
+    int c=a+b;
+    return c;//it break the method 
+    System.out.println(c);
+
+  }
+    public static void main(String[] args) {
+       Main p=new Main();
+      System.out.println(p.add());
+    }
+}
+error :because return statement is last statement and when write return inside  method means it terminate the method.  
+---------------------------------------------------------------------------
+return and argument : 
+
+syntax:
+return_type method_name(data_type variable_name){ 
+
+return return_type;
+
+} 
+
+public class Main {
+    int show(int a) {//parameter
+        return a;
+    }
+
+    public static void main(String[] args) {
+        Main k = new Main();
+        System.out.println(k.show(3));//argument 
+    }
+}
+-------------------------------------------------------------
+public class Main {
+    int show(int a) {//parameter
+        return a;
+    }
+
+    public static void main(String[] args) {
+        int b=78;
+        Main k = new Main();
+        System.out.println(k.show(b));//pass by value 
+    }
+}
+-------------------------------------------------------------
+method return and argument or return and no argument always return single value
+
+public class Main {
+    int show(int a,int b) {//parameter
+        return a,b;
+    }
+
+    public static void main(String[] args) {
+        Main k = new Main();
+        System.out.println(k.show(1,1));//pass by value 
+    }
+}
+error : because int always return single value 
+-------------------------------------------------------------
+covariant return type :yes
+ 
+public class Main {
+    Main show(int a) {
+        System.out.println(a);
+        return this;
+    }
+
+    public static void main(String[] args) {
+        Main p=new Main();
+        p.show(45);
+    }
+}
+-------------------------------------------------------------
+import java.util.*;
+
+public class Main {
+    Main show(int a) {
+        System.out.println(a);
+        return this;
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the value of a ");
+        int a = sc.nextInt();
+        Main p = new Main();
+        p.show(a);
+    }
+}
+-------------------------------------------------------------
+types :
+no return and no argument 
+no return and argument 
+return and no argument 
+return and argument 
+
+import java.util.*;
+
+public class Main {
+    //no return and no argument 
+    void show1(){
+
+    }
+    //no return and argument 
+    void show2(int a){
+
+    }
+    //return and no argument 
+    int show3(){
+        return 6;
+    }
+
+    //return and argument 
+    boolean show4(boolean hello){
+        return hello;
+    }
+    public static void main(String[] args) {
+        Main p=new Main();
+        p.show1();
+        p.show2(56);
+        System.out.println(p.show3());
+        System.out.println(p.show4(true));
+    }
+}
+
+
+-------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

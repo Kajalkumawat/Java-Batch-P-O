@@ -1,0 +1,40 @@
+->in a class method name same then method will be overloaded 
+
+
+->in a class method name same but number of parameter will be different 
+
+
+in a class method name  number of parameter also same but change data type of parameter then method does not overload 
+
+in a class method name same but return type different and parameter also same : method will be overloaded 
+
+-----------------------------------------
+single level inheritance :method overloading 
+			problem solve 
+multilevel inheritance :method overloading
+			problem solve 
+ 
+heririchal inheritance :method overloading 
+			problem solve 
+
+-----------------------------------------
+class A
+	constructor overload 
+
+class Main 
+main method :
+
+-----------------------------------------
+class A
+	constructor overload :problem sovle 
+
+class Main 
+main method :
+-----------------------------------------
+class A
+	constructor overload :number of parameter same and data type of parameter different 
+
+class Main 
+main method :
+-----------------------------------------
+

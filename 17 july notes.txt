@@ -1,0 +1,207 @@
+getter setter :two number addition : 
+class A {
+    private int a;
+    private int b;
+
+    void setA(int a, int b) {
+        this.a = a;
+        this.b = b;
+    }
+
+    int getA1() {
+        return a;
+    }
+
+    int getA2() {
+        return b;
+    }
+
+    void show() {
+        System.out.println(a + b);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        A p=new A();
+        p.setA(3, 3);
+        p.getA1();
+        p.getA2();
+        p.show();
+    }
+}
+----------------------
+class A {
+    private int a;
+    private int b;
+
+    void setA(int a, int b) {
+        this.a = a;
+        this.b = b;
+    }
+
+    int getA1() {
+        return a+b;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        A p=new A();
+        p.setA(3, 3);
+        System.out.println(p.getA1());
+       
+    }
+}
+-------------------------------------------------------
+constructor :
+->it is special method
+->class name and constructor name same 
+->used to initialization 
+->used to help object creation
+->used to provide memory inside a class
+->constructor have no return type.
+->constructor always allocation new through used new keyword 
+
+class A {
+    A() {// constructor
+        System.out.println("Hello world");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        // two ways :
+        // first way
+        new A();
+        // second way
+        A k = new A();
+    }
+}
+------------------------------------------------- 
+two number addition in constructor : 
+import java.util.*;
+public class Main {
+    Main() {
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int c=a+b;
+        System.out.println(c);
+    }
+
+    public static void main(String[] args) {
+        new Main();
+    }
+}
+----------------------------------------------------------------
+types of constructor :
+a)default constructor 
+b)parameterised constructor 
+
+a)default constructor :
+->make a constructor but does not declare any data type and variable inside parenthesis 
+
+import java.util.*;
+public class Main {
+    //default constructor 
+    Main() {
+      
+    }
+
+    public static void main(String[] args) {
+        new Main();
+    }
+}
+
+why we used default constructor : 
+->it is used to provide default value to the instance variable through JVM 
+
+ways :
+implicit way :
+->internally 
+->when if  you will make or not but jvm always provide default constructor in java 
+
+explicit way :
+->external :used to write a code through developer 
+
+-----------------------------------------------------------------------------------
+import java.util.*;
+
+public class Main {
+    Main() {
+        System.out.println("Hello wolrd");
+    }
+    void show(){
+        System.out.println("show method");
+    }
+    public static void main(String[] args) {
+       Main p=new Main();
+       p.show();
+       p.show();
+       Main k=new Main();
+       k.show();
+    }
+}
+---------------------------------------------------------------------
+instance variable value access :
+
+import java.util.*;
+
+public class Main {
+    int a , b ;
+
+    Main(){
+        System.out.println(a+" "+b);
+    }
+
+    public static void main(String[] args) {
+        new Main();
+    }
+} 
+---------------------------------------------------------------------
+import java.util.*;
+
+public class Main {
+    private int a;
+
+    void setA(int a) {
+        this.a = a;
+    }
+
+    int getA() {
+        return a;
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        Main k = new Main();
+        k.setA(a);
+        System.out.println(k.getA());
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

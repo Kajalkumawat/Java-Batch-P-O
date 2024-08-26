@@ -1,0 +1,160 @@
+interface 
+	class A
+		method1 
+
+class B -->method1 
+
+class Main :B k through A ki property access krni hey 
+------------------------------------------------------------------
+interface 
+	class A
+		method1 :no return and argument 
+		method2: return and argument 
+		method3: return and no argument 
+		method4 :covariant return type 
+
+class B -->method1 
+
+class Main :B k through A ki property access krni hey 
+----------------------------------------------
+interface 
+	class A
+		method1 :no return and argument 
+	class B1
+		method2: return and argument 
+	class C
+		method3: return and no argument 
+	class D
+		method4 :covariant return type 
+
+class B -->method1 
+
+class Main :B k through A ki property access krni hey 
+all classes access the proeprties 
+------------------------------------------------------------------
+interface 
+	method2 :return and argument 
+	class A
+		method1 
+
+class B -->method1 
+
+class Main :B k through A ki property access krni hey 
+
+------------------------------------------------------------------
+class A
+	interface C
+		method1 :no return and no argument 
+		method2:no return and  argument 
+		method3:return and no argument 
+		method4 : return and  argument 
+
+class B access A
+
+Main class 
+main method :access B k through  
+------------------------------------------------------------------
+class A
+	interface C
+		method1 :no return and no argument 
+	interface D
+		method2:no return and  argument 
+	interface E
+		method3:return and no argument 
+	interface F
+		method4 : return and  argument 
+
+class B access A
+
+Main class 
+main method :access B k through  
+------------------------------------------------------------------
+class
+	class 
+		method
+
+acess 
+
+------------------------------------------------------------------
+interface 
+	class 
+	interface 
+
+access 
+------------------------------------------------------------------
+class
+	interface
+	class 
+
+access 
+------------------------------------------------------------------
+interface A
+	interface B
+		interface C 
+
+	class D
+		class E
+access 
+
+------------------------------------------------------------------
+class A
+	interface B---A
+		interface C
+
+	class D---A 
+		class E
+
+access 
+------------------------------------------------------------------
+anonymous inner class 
+
+interface A 
+	method : no return and no argument 
+
+interface B
+	method : no return and  argument 
+
+interface C
+	method :  return and no argument 
+
+interface D 
+	method :  return and  argument 
+
+
+class Main : anonymous inner class 
+------------------------------------------------------------------
+class A
+
+interface B
+
+class C both acces A and B 
+
+Main class access 
+------------------------------------------------------------------
+class A
+
+interface B
+
+interface C
+
+interface D 
+
+class C both acces A and B and C and D  
+
+Main class access 
+------------------------------------------------------------------
+class A 
+	interface F
+
+interface B
+	class K
+
+class C both access 
+------------------------------------------------------------------
+
+
+
+
+
+
+

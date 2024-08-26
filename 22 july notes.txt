@@ -1,0 +1,104 @@
+heirarichal inheritance :
+one parent and multiple child 	
+
+class Parent {// normal class convert parent
+    void show1() {
+        System.out.println("parent class ");
+    }
+}
+
+class Child1 extends Parent {// normal convert child
+    void show2() {
+        System.out.println("child 1 class ");
+    }
+}
+
+class Child2 extends Parent {
+    void show3() {
+        System.out.println("child2 class method");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Child1 k = new Child1();
+        k.show1();
+        k.show2();
+        Child2 p = new Child2();
+        p.show1();
+        p.show3();
+    }
+}
+
+------------------------------------------------
+multilple inheritance : 
+->multiple parent with single child 
+
+->multiple inheritance does not support in java due to ambiguity error
+
+ambiguity error :when extends multiple parent in single child then compiler become confused which one is first. 
+ 
+when want to solve this error used interface . 
+
+class Parent1{
+    void show1(){
+        System.out.println("parent 1 class");
+    }
+}
+class Parent2 {
+    void show2(){
+        System.out.println("parent 2 class");
+    }
+}
+class Child extends Parent1,Parent2{
+    void show3(){
+        System.out.println("child class");
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+       Child p=new Child();
+       p.show1();
+       p.show3();
+       p.show2();
+    }
+}
+-------------------------------------------------------------------------------------
+hybrid inheritance : 
+->does not support in java 
+
+-------------------------------------------------------------------------------------
+polymorphism : 
+->one thing many form . 
+->single action in different ways
+
+poly :multiple 
+morphism :forms 
+
+types :
+->compile time polymorphism 
+	method overloading , constructor chaining , constructor overloading 
+
+->run time polymorphism 
+	method overriding , method overhiding 
+
+-------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,132 @@
+parameterised constructor :
+------------------------------------------------------------
+class A
+constructor :two number addition
+
+class B
+constructor :two number multiplication
+
+class C
+constructor :two number division
+
+class D
+constructor :two number modular
+
+class Main 
+constructor :two number substraction 
+
+main method access 
+------------------------------------------------
+class A
+constructor :two number addition
+method :no return and no argument 
+
+class B
+constructor :two number multiplication
+method :no return and  argument 
+
+class C
+constructor :two number division
+method : return and no argument 
+
+class D
+constructor :two number modular
+method : return and  argument 
+
+class Main 
+constructor :two number substraction 
+method :covariant return type 
+
+main method access 
+-----------------------------
+through instance variable :
+
+class A
+constructor :two number addition
+
+class B
+constructor :two number multiplication
+
+class C
+constructor :two number division
+
+class D
+constructor :two number modular
+
+class Main 
+constructor :two number substraction 
+
+main method access 
+------------------------------------------------
+class A
+no return and no argument 
+
+class B ex A 
+no return and argument 
+
+class Main 
+main access
+------------------------------------------------
+class A
+covariant return type 
+
+class B ex A 
+covariant return type 
+
+class Main 
+
+main access
+------------------------------------------------
+class A
+covariant return type 
+
+
+class Main ex A
+covariant return type 
+
+main access
+------------------------------------------------
+class College 
+instance variable : 
+
+cname
+caddress 
+cnumber
+cexpertise
+cfacutly 
+
+method :access print 
+
+class Student 
+sname
+sid
+snumber
+scourse
+saddress
+sfname
+smname 
+
+class Main 
+main method access 
+----------------------------------------------------------
+Questions :
+1)why destructor does not support in java ? 
+2)why we used default constructor ?
+3)why we used parameterised constructor ?
+4)what is difference between oop and pop ?
+5)what is covariant return type ? 
+----------------------------------------------------------
+OOps :full 
+->oop javatpoint page 
+->encapsulation 
+
+
+
+
+
+
+
+
+
+
+
