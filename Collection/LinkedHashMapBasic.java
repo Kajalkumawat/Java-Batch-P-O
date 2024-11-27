@@ -9,5 +9,6 @@ public class LinkedHashMapBasic {
         for(Map.Entry l:lhs.entrySet()){
             System.out.println(l.getKey()+" "+l.getValue());
         }
+        System.out.println("Values: "+lhs.values());  
     }
 }
